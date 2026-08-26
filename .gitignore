@@ -1,1 +1,6 @@
+# Local README preview, regenerated on demand
 preview.local.html
+
+# Python
+__pycache__/
+*.pyc
