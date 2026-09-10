@@ -34,9 +34,6 @@ data pipelines from diverse operational sources across finance, IT and industria
 - Prior **Alstom** experience in the rail / mobility environment
 - Detail-oriented, comfortable in high-volume, fast-paced settings — bilingual **FR / EN**
 
-> **Work authorization** — Canadian Permanent Residency currently being processed.
-> Eligible to work anywhere in Canada (except Quebec). No restrictions, no sponsorship needed.
-
 ---
 
 ## Skills
