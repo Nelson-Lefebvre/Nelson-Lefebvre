@@ -1,7 +1,9 @@
 
 <div align="center">
 
-  <b>Data Analyst &amp; Engineer</b> &nbsp;|&nbsp; Operational Analytics · BI · Data Quality
+  <b>Data Analyst &amp; Engineer</b>
+  <br> - </br>
+  Operational Analytics · BI · Data Quality
 
   <a href="https://www.linkedin.com/in/nelson-lefebvre/">
     <img src="https://img.shields.io/badge/LinkedIn-004A61?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
