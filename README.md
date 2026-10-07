@@ -1,6 +1,3 @@
-<div align="center">
-  <img src="assets/banner.png" alt="Nelson Lefebvre — Data Analyst &amp; Data Engineer" width="100%">
-</div>
 
 <div align="center">
 
@@ -95,42 +92,6 @@ data pipelines from diverse operational sources across finance, IT and industria
   </tr>
 </table>
 
----
-
-## Experience
-
-### IS&T Operations and Training · Alstom
-<sub>Rochester, NY, USA — Sep 2024 – Feb 2026</sub>
-
-- Built and standardised the **master dataset** for a **500+ asset IT fleet**, eliminating duplicate and outdated
-  records to **close data-quality gaps**, then developed **Power BI** dashboards and KPIs on the cleaned data for
-  cost forecasting and fleet / infrastructure planning by senior leadership
-- Acted as **data / documentation gatekeeper** for new-site deployments across the Americas, **validating**
-  technical documentation (network topology, IP plans, rack layouts) before records were committed to production
-  systems, closing data / documentation-quality gaps across regions and sites
-- Trained **~1,000 users/month** across North & South America, strengthening IT awareness and standardising IT
-  processes across the organisation, reducing user errors
-
-### Data Administrator — Risk & BI · Groupe Crédit Agricole
-<sub>Vannes, France — May – Aug 2024</sub>
-
-- Maintained **data integrity** across the regional bank's **risk** and **accounting** systems, aligning shared
-  data elements and resolving discrepancies to preserve operational continuity
-- Performed **root cause analysis** on data and reporting incidents, coordinating corrective **action plans**
-  with business units and IT stakeholders
-- Designed **credit-risk KPIs** for the lending portfolio in **SQL, Excel and MicroStrategy**; insights directly
-  informed recovery-team strategy
-
-### Data Engineer / Analyst · Carrefour Administratif
-<sub>Mondeville, France — Feb – Jul 2023</sub>
-
-- Built and deployed **ETL pipelines on GCP (BigQuery)** with Python to automate ingestion and transformation of
-  **accounting data** from diverse sources, improving data quality and cutting manual processing
-- Led an end-to-end **EGALIM regulatory-compliance** reporting pipeline managing overdue-billing workflows, and
-  built **Looker Studio** dashboards to monitor adherence
-
----
-
 ## Featured Projects
 
 ### [Alberta Energy — Operations Intelligence](https://github.com/Nelson-Lefebvre/alberta-energy-bi)
@@ -214,17 +175,6 @@ waves</b> (TEA5767 + RDS on Raspberry&nbsp;Pi) for remote areas.
 | **M.Sc. Computer Science** — Decision-Making, Optimization & AI/Data | Université de Caen Normandie, France | 2021 – 2023 |
 | **Exchange Year — M.Sc. Artificial Intelligence** | University of Nebraska at Omaha, USA | 2022 |
 | **B.Sc. Computer Science** | Université de Caen Normandie, France | 2018 – 2021 |
-
----
-
-## Languages & Soft Skills
-
-**French** (native) · **English** (fluent) · **Spanish** (intermediate)
-
-Attention to detail · cross-functional collaboration · stakeholder communication · takes initiative ·
-thrives in high-volume / fast-paced environments
-
----
 
 <div align="center">
 
