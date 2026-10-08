@@ -87,23 +87,23 @@ data pipelines from diverse operational sources across finance, IT and industria
 
 ## Featured Projects
 
-### [Alberta Energy — Operations Intelligence](https://github.com/Nelson-Lefebvre/alberta-energy-bi)
+### [Alberta Energy : Operations Intelligence](https://github.com/Nelson-Lefebvre/alberta-energy-bi)
 
 End-to-end analytics on Alberta's oil & gas basin, built entirely from **public data**: Petrinex production
-filings, the AER well register, and Government of Alberta / Bank of Canada price series — ingested with
+filings, the AER well register, and Government of Alberta / Bank of Canada price series/ingested with
 Python, modelled into a **star schema**, and reported in a bilingual **Power BI** model.
 
 <a href="https://github.com/Nelson-Lefebvre/alberta-energy-bi">
   <img src="assets/projects/alberta-executive.png" alt="Executive summary dashboard: production, revenue, OPEX per boe and carbon intensity" width="100%">
 </a>
 
-<sub><b>Executive summary</b> — KPIs, production vs. WCS price, operator ranking</sub>
+<sub><b>Executive summary</b>/KPIs, production vs. WCS price, operator ranking</sub>
 
 <a href="https://github.com/Nelson-Lefebvre/alberta-energy-bi">
   <img src="assets/projects/alberta-forecast.png" alt="Forecast and trends dashboard: production run-rate, YoY trend and confidence band" width="100%">
 </a>
 
-<sub><b>Forecast &amp; trends</b> — run-rate, YoY trend, variability band</sub>
+<sub><b>Forecast &amp; trends</b> / run-rate, YoY trend, variability band</sub>
 
 <sub><code>Python</code> · <code>BigQuery</code> · <code>star schema</code> · <code>Power BI</code> · <code>DAX</code> · <code>bilingual reporting</code></sub>
 
