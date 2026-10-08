@@ -1,9 +1,15 @@
+---
 
-<div align="center">
+## About
 
-  <b>Data Analyst &amp; Engineer</b>
-  <br> - </br>
-  Operational Analytics · BI · Data Quality
+Data & BI Analyst with a **Master's in Computer Science** and **2+ years** building clean, scalable datasets and
+data pipelines from diverse operational sources across finance, IT and industrial-fleet systems.
+
+- Strong **SQL** and **Power BI**, hands-on **ETL** and **ERP / SAP integration**
+- Track record **closing data-quality gaps** across regions and functions
+- Turn operational data into **dashboards and KPIs** for technical and non-technical stakeholders
+- Detail-oriented, comfortable in high-volume, fast-paced settings
+- Bilingual **FR / EN**
 
   <a href="https://www.linkedin.com/in/nelson-lefebvre/">
     <img src="https://img.shields.io/badge/LinkedIn-004A61?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
@@ -17,21 +23,6 @@
   <a href="assets/cv/Nelson_Lefebvre_CV_FR.pdf">
     <img src="https://img.shields.io/badge/CV-FR-004A61?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="CV FR">
   </a>
-
-</div>
-
----
-
-## About
-
-Data & BI Analyst with a **Master's in Computer Science** and **2+ years** building clean, scalable datasets and
-data pipelines from diverse operational sources across finance, IT and industrial-fleet systems.
-
-- Strong **SQL** and **Power BI**, hands-on **ETL** and **ERP / SAP integration**
-- Track record **closing data-quality gaps** across regions and functions
-- Turn operational data into **dashboards and KPIs** for technical and non-technical stakeholders
-- Prior **Alstom** experience in the rail / mobility environment
-- Detail-oriented, comfortable in high-volume, fast-paced settings — bilingual **FR / EN**
 
 ---
 
@@ -180,7 +171,7 @@ waves</b> (TEA5767 + RDS on Raspberry&nbsp;Pi) for remote areas.
 
 <div align="center">
 
-### Let's talk
+### Let's talk !
 
 Open to **Data Analyst** and **Data Engineer** roles in Canada.
 
