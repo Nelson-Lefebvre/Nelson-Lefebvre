@@ -165,8 +165,8 @@ waves</b> (TEA5767 + RDS on Raspberry&nbsp;Pi) for remote areas.
 
 | Degree | Institution | Year |
 |---|---|---|
-| **M.Sc. Computer Science** — Decision-Making, Optimization & AI/Data | Université de Caen Normandie, France | 2021 – 2023 |
-| **Exchange Year — M.Sc. Artificial Intelligence** | University of Nebraska at Omaha, USA | 2022 |
+| **M.Sc. Computer Science** : Decision-Making, Optimization & AI/Data | Université de Caen Normandie, France | 2021 – 2023 |
+| **Exchange Year, M.Sc. Artificial Intelligence** | University of Nebraska at Omaha, USA | 2022 |
 | **B.Sc. Computer Science** | Université de Caen Normandie, France | 2018 – 2021 |
 
 <div align="center">
