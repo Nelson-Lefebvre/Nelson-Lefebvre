@@ -1,4 +1,4 @@
-**Bilingual (English/French) data analyst**, moving to **Calgary, AB** in January 2027 (Canadian permanent residence in progress).
+**Bilingual (English/French) data analyst**, moving to **Calgary, AB** (Canadian permanent residence in progress).
 Master's in Computer Science and 2+ years building KPIs, Power BI dashboards and reports on finance, accounting and IT-operations data, in France and the US.
 
 - SQL, Power BI (DAX) and Excel day to day; Python, dbt and Databricks for the pipelines behind the reports.
