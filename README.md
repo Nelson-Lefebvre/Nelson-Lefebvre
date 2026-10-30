@@ -66,6 +66,8 @@ data pipelines from diverse operational sources across finance, IT and industria
   <tr>
     <td><b>Cloud&nbsp;&amp;&nbsp;Tooling</b></td>
     <td>
+      <img src="https://img.shields.io/badge/Databricks-004A61?style=flat-square&logo=databricks&logoColor=white" alt="Databricks">
+      <img src="https://img.shields.io/badge/dbt-004A61?style=flat-square&logo=dbt&logoColor=white" alt="dbt">
       <img src="https://img.shields.io/badge/GCP-004A61?style=flat-square&logo=googlecloud&logoColor=white" alt="GCP">
       <img src="https://img.shields.io/badge/AWS-004A61?style=flat-square&logo=amazonwebservices&logoColor=white" alt="AWS">
       <img src="https://img.shields.io/badge/Docker-004A61?style=flat-square&logo=docker&logoColor=white" alt="Docker">
@@ -90,8 +92,9 @@ data pipelines from diverse operational sources across finance, IT and industria
 ### [Alberta Energy : Operations Intelligence](https://github.com/Nelson-Lefebvre/alberta-energy-bi)
 
 End-to-end analytics on Alberta's oil & gas basin, built entirely from **public data**: Petrinex production
-filings, the AER well register, and Government of Alberta / Bank of Canada price series/ingested with
-Python, modelled into a **star schema**, and reported in a bilingual **Power BI** model.
+filings, the AER well register, and Government of Alberta / Bank of Canada price series, ingested with
+Python into **Databricks** (Delta Lake, Unity Catalog), modelled with **dbt** into a **star schema**, refreshed
+by a monthly job, and reported in a bilingual **Power BI** model.
 
 <a href="https://github.com/Nelson-Lefebvre/alberta-energy-bi">
   <img src="assets/projects/alberta-executive.png" alt="Executive summary dashboard: production, revenue, OPEX per boe and carbon intensity" width="100%">
@@ -105,7 +108,7 @@ Python, modelled into a **star schema**, and reported in a bilingual **Power BI*
 
 <sub><b>Forecast &amp; trends</b> / run-rate, YoY trend, variability band</sub>
 
-<sub><code>Python</code> · <code>BigQuery</code> · <code>star schema</code> · <code>Power BI</code> · <code>DAX</code> · <code>bilingual reporting</code></sub>
+<sub><code>Python</code> · <code>Databricks</code> · <code>Delta Lake</code> · <code>dbt</code> · <code>star schema</code> · <code>Power BI</code> · <code>DAX</code> · <code>bilingual reporting</code></sub>
 
 ---
 
