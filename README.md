@@ -38,7 +38,7 @@ Two errors passed every structural test: a gas unit mismatch put one region's OP
 CO₂ with no production underneath. Grain-level plausibility tests now catch both.
 
 <a href="https://github.com/Nelson-Lefebvre/alberta-energy-bi">
-  <img src="assets/projects/alberta-overview.png" alt="Executive summary dashboard, the monthly Databricks pipeline from bronze to gold, and the star schema around a conformed dim_region" width="100%">
+  <img src="assets/projects/alberta-executive.png" alt="Executive summary dashboard: production, revenue, OPEX per boe and carbon intensity" width="70%">
 </a>
 
 ### [Calgary 311 Service Performance](https://github.com/Nelson-Lefebvre/calgary-311-service-performance)
@@ -53,7 +53,7 @@ pull request and traced each number to a logged query. That review caught the AI
 figure: +17%); every case is in the [AI log](https://github.com/Nelson-Lefebvre/calgary-311-service-performance/blob/main/docs/ai_log.md).
 
 <a href="https://github.com/Nelson-Lefebvre/calgary-311-service-performance">
-  <img src="assets/projects/calgary-311-overview.png" alt="Calgary 311 monthly situation dashboard, the monthly GitHub Actions pipeline from open data to Tableau Public, and the data model around fct_service_request" width="100%">
+  <img src="assets/projects/calgary-311-monthly.png" alt="Calgary 311 monthly situation dashboard: old backlog, benchmark share, slipping services, seasonality and snow" width="70%">
 </a>
 
 ## Other projects
