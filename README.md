@@ -37,9 +37,11 @@ costs are simulated.
 Two errors passed every structural test: a gas unit mismatch put one region's OPEX/boe at $4, and 11,943 wells carried
 CO₂ with no production underneath. Grain-level plausibility tests now catch both.
 
+<p align="center">
 <a href="https://github.com/Nelson-Lefebvre/alberta-energy-bi">
   <img src="assets/projects/alberta-executive.png" alt="Executive summary dashboard: production, revenue, OPEX per boe and carbon intensity" width="70%">
 </a>
+</p>
 
 ### [Calgary 311 Service Performance](https://github.com/Nelson-Lefebvre/calgary-311-service-performance)
 
@@ -52,9 +54,11 @@ Managed as an AI-assisted project with **Claude Code**: I owned the scope, KPIs 
 pull request and traced each number to a logged query. That review caught the AI inflating backlog growth to +48% (true
 figure: +17%); every case is in the [AI log](https://github.com/Nelson-Lefebvre/calgary-311-service-performance/blob/main/docs/ai_log.md).
 
+<p align="center">
 <a href="https://github.com/Nelson-Lefebvre/calgary-311-service-performance">
   <img src="assets/projects/calgary-311-monthly.png" alt="Calgary 311 monthly situation dashboard: old backlog, benchmark share, slipping services, seasonality and snow" width="70%">
 </a>
+</p>
 
 ## Other projects
 
