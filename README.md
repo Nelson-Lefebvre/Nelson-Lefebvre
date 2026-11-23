@@ -22,8 +22,24 @@ Master's in Computer Science and 2+ years building KPIs, Power BI dashboards and
 ![SQL Server](https://img.shields.io/badge/SQL%20Server-Microsoft-CC2927)
 ![ServiceNow](https://img.shields.io/badge/ServiceNow-CMDB-62D84E)
 ![Git](https://img.shields.io/badge/Git-GitHub-F05032?logo=git&logoColor=white)
+![Claude Code](https://img.shields.io/badge/Claude%20Code-AI--assisted%20projects-D97757?logo=claude&logoColor=white)
 
-## Featured project
+## Featured projects
+
+### [Calgary 311 Service Performance](https://github.com/Nelson-Lefebvre/calgary-311-service-performance)
+
+2.49M real City of Calgary 311 service requests (2022 onward), ingested with Python, modelled with **dbt** on DuckDB,
+refreshed monthly by **GitHub Actions** and reported in **Tableau Public**. The City publishes no response-time targets,
+so each service is judged against its own 2022-2024 benchmark: only Fire slipped, while field requests open 90+ days
+rose 17% in four years.
+
+Managed as an AI-assisted project with **Claude Code**: I owned the scope, KPIs and data rules, reviewed every change by
+pull request and traced each number to a logged query. That review caught the AI inflating backlog growth to +48% (true
+figure: +17%); every case is in the [AI log](https://github.com/Nelson-Lefebvre/calgary-311-service-performance/blob/main/docs/ai_log.md).
+
+<a href="https://public.tableau.com/app/profile/nelson.lefebvre/viz/calgary_311">
+  <img src="assets/projects/calgary-311-monthly.png" alt="Calgary 311 monthly situation dashboard: old backlog, benchmark share, slipping services, seasonality and snow" width="70%">
+</a>
 
 ### [Alberta Energy Operations Intelligence](https://github.com/Nelson-Lefebvre/alberta-energy-bi)
 
@@ -36,7 +52,7 @@ Two errors passed every structural test: a gas unit mismatch put one region's OP
 CO₂ with no production underneath. Grain-level plausibility tests now catch both.
 
 <a href="https://github.com/Nelson-Lefebvre/alberta-energy-bi">
-  <img src="assets/projects/alberta-executive.png" alt="Executive summary dashboard: production, revenue, OPEX per boe and carbon intensity" width="100%">
+  <img src="assets/projects/alberta-executive.png" alt="Executive summary dashboard: production, revenue, OPEX per boe and carbon intensity" width="70%">
 </a>
 
 ## Other projects
@@ -44,8 +60,6 @@ CO₂ with no production underneath. Grain-level plausibility tests now catch bo
 - **[LLM Dialect Drift Index (Louisiana French)](https://github.com/Nelson-Lefebvre/LLM-Dialect-drift-index-Louisiana)**:
   asked for Cajun forms, do LLMs keep them or drift to standard French? 8 linguistic variables, 720 generations,
   15 models from 3B to 550B parameters, with the statistical analysis published.
-- **[Nebraska Storm Analysis](https://github.com/Nelson-Lefebvre/Artificial-intelligence-application-Storms-in-Nebraska)**:
-  spatial and statistical analysis of 70 years of tornado records (1950-2021).
 - **[Jeanne](https://github.com/Nelson-Lefebvre/Jeanne-AI-FMRADIO-ANALYSER-INTERNSHIP)**: offline voice assistant that
   reads live information from FM radio (RDS on a Raspberry Pi).
 
