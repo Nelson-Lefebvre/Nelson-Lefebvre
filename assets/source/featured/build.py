@@ -8,12 +8,12 @@ import io
 import urllib.request
 from pathlib import Path
 
-from PIL import Image, ImageDraw
+from PIL import Image, ImageChops
 
 HERE = Path(__file__).parent
 OUT = HERE.parent.parent / "projects"
 PROJECTS = {"alberta": "alberta-executive.png", "calgary-311": "calgary-311-monthly.png"}
-WIDTH, PAD, GAP, INNER, BORDER = 2400, 30, 30, 24, "#D0D7DE"
+WIDTH, GAP = 2400, 40
 
 
 def render(mmd: Path) -> Image.Image:
@@ -27,24 +27,31 @@ def render(mmd: Path) -> Image.Image:
         return Image.open(io.BytesIO(resp.read())).convert("RGB")
 
 
-def paste_fit(canvas: Image.Image, img: Image.Image, box: tuple[int, int, int, int]) -> None:
-    x, y, w, h = box
-    ImageDraw.Draw(canvas).rectangle([x, y, x + w - 1, y + h - 1], outline=BORDER, width=2)
-    scale = min((w - 2 * INNER) / img.width, (h - 2 * INNER) / img.height)
-    fit = img.resize((round(img.width * scale), round(img.height * scale)), Image.LANCZOS)
-    canvas.paste(fit, (x + (w - fit.width) // 2, y + (h - fit.height) // 2))
+def trim(img: Image.Image, tol: int = 12, margin: int = 16) -> Image.Image:
+    """Crop the uniform margin (colour of the top-left pixel), keeping a thin border so text never touches the edge."""
+    bg = Image.new("RGB", img.size, img.getpixel((0, 0)))
+    mask = ImageChops.difference(img, bg).convert("L").point(lambda v: 255 if v > tol else 0)
+    left, top, right, bottom = mask.getbbox() or (0, 0, *img.size)
+    return img.crop((max(left - margin, 0), max(top - margin, 0), min(right + margin, img.width), min(bottom + margin, img.height)))
+
+
+def scaled(img: Image.Image, width: int) -> Image.Image:
+    return img.resize((width, round(img.height * width / img.width)), Image.LANCZOS)
 
 
 for name, screenshot in PROJECTS.items():
-    kpi = Image.open(OUT / screenshot).convert("RGB")
-    left_w = round((WIDTH - 2 * PAD - GAP) * 0.58)
-    right_w = WIDTH - 2 * PAD - GAP - left_w
-    left_h = round(left_w * kpi.height / kpi.width) + 2 * INNER
-    right_h = (left_h - GAP) // 2
-    canvas = Image.new("RGB", (WIDTH, left_h + 2 * PAD), "white")
-    paste_fit(canvas, kpi, (PAD, PAD, left_w, left_h))
-    right_x = PAD + left_w + GAP
-    paste_fit(canvas, render(HERE / f"{name}-pipeline.mmd"), (right_x, PAD, right_w, right_h))
-    paste_fit(canvas, render(HERE / f"{name}-model.mmd"), (right_x, PAD + right_h + GAP, right_w, right_h))
+    kpi = trim(Image.open(OUT / screenshot).convert("RGB"))
+    pipe = trim(render(HERE / f"{name}-pipeline.mmd"))
+    model = trim(render(HERE / f"{name}-model.mmd"))
+    # right column width that makes pipeline + model exactly as tall as the screenshot: no empty space
+    a_kpi = kpi.width / kpi.height
+    k = pipe.height / pipe.width + model.height / model.width
+    right_w = round((WIDTH - GAP - a_kpi * GAP) / (1 + a_kpi * k))
+    left_w = WIDTH - GAP - right_w
+    kpi, pipe, model = scaled(kpi, left_w), scaled(pipe, right_w), scaled(model, right_w)
+    canvas = Image.new("RGB", (WIDTH, max(kpi.height, pipe.height + GAP + model.height)), "white")
+    canvas.paste(kpi, (0, 0))
+    canvas.paste(pipe, (left_w + GAP, 0))
+    canvas.paste(model, (left_w + GAP, pipe.height + GAP))
     canvas.save(OUT / f"{name}-overview.png", optimize=True)
-    print(name, canvas.size)
+    print(name, canvas.size, "right column", right_w)
